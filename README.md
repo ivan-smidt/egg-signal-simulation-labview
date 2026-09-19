@@ -39,7 +39,7 @@ Front panel with the main controls: signal generation, sampling frequency, range
 
 ![Front panel, bradygastria](images/front-panel-bradygastria.png)
 
-Basic rhythm of 0.29 Hz, below 0.042 Hz, so the rhythm is classified as bradygastria. The spectrum has its main peak at the basic rhythm frequency, followed by its harmonics.
+Basic rhythm of 0.029 Hz, below 0.042 Hz, so the rhythm is classified as bradygastria. The spectrum has its main peak at the basic rhythm frequency, followed by its harmonics.
 
 ### Normogastria 
 
@@ -81,6 +81,7 @@ When no event occurs, the Timeout case passes the stored parameters through unch
 | 0.042 to 0.0625 Hz | Normogastria |
 | above 0.0625 Hz (3.75 cycles/min) | Tachygastria |
 | 0 Hz | No signal |
+
 ## Background
 
 The electrogastrogram (EGG) is a recording of the electrical activity of the stomach. In healthy people the dominant rhythm is about 3 cycles per minute. A slower rhythm is called bradygastria and a faster one tachygastria.

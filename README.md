@@ -4,7 +4,7 @@ LabVIEW simulation of an electrogastrogram (EGG) signal with input validation, r
 
 ## Overview
 
-The signal is the sum of a basic gastric rhythm with two harmonics and two respiratory disturbance components. Each frequency and amplitude is generated randomly within the ranges set on the front panel.
+The signal is the sum of a basic gastric rhythm with two harmonics and two respiratory disturbance components. The basic rhythm and the respiratory disturbance components are generated randomly within the ranges set on the front panel, and the harmonics are derived from the basic rhythm.
 
 ## Features
 
@@ -16,6 +16,10 @@ The signal is the sum of a basic gastric rhythm with two harmonics and two respi
 - Frequency-domain display (FFT)
 - Automatic rhythm classification
 
+  ## Requirements
+
+- LabVIEW 2026 or newer
+- For older versions, use [`egg-signal-simulation-2020.vi`](egg-signal-simulation-2020.vi), saved for LabVIEW 2020
 ## How to run
 
 1. Download [`egg-signal-simulation.vi`](egg-signal-simulation.vi) and open it in LabVIEW.
@@ -24,7 +28,7 @@ The signal is the sum of a basic gastric rhythm with two harmonics and two respi
 4. Press **Start** to run the simulation.
 5. Press **Signal Generation** to generate new parameters.
 
-### Front panel
+## Front panel
 
 ![Front panel](images/front-panel.png)
 
@@ -34,19 +38,19 @@ Front panel with the main controls: signal generation, sampling frequency, range
 
 ![Front panel, bradygastria](images/front-panel-bradygastria.png)
 
-Basic rhythm of 0.033 Hz, below 0.042 Hz, so the rhythm is classified as bradygastria. The spectrum has its main peak at the basic rhythm frequency, followed by its harmonics.
+Basic rhythm of 0.024 Hz, below 0.042 Hz, so the rhythm is classified as bradygastria. The spectrum has its main peak at the basic rhythm frequency, followed by its harmonics.
 
 ### Normogastria 
 
 ![Front panel, normogastria](images/front-panel-normogastria.png)
 
-Basic rhythm of 0.055 Hz, in the normal range of about 3 cycles per minute, so the rhythm is classified as normogastria.
+Basic rhythm of 0.043 Hz, between 0.042 and 0.0625 Hz, so the rhythm is classified as normogastria.
 
 ### Tachygastria 
 
 ![Front panel, tachygastria](images/front-panel-tachygastria.png)
 
-Basic rhythm of 0.08 Hz, above 0.0625 Hz, so the rhythm is classified as tachygastria.
+Basic rhythm of 0.072 Hz, above 0.0625 Hz, so the rhythm is classified as tachygastria.
 
 ## Block diagram
 
@@ -64,13 +68,11 @@ If any minimum value is greater than its maximum, the program shows an error mes
 
 ## Rhythm classification
 
-Basic rhythm frequency - Type 
-
-below 0.042 Hz (2.5 cycles/min) - Bradygastria
-
-0.042 to 0.0625 Hz - Normogastria 
- 
-above 0.0625 Hz (3.75 cycles/min) - Tachygastria 
+| Basic rhythm frequency | Type |
+|---|---|
+| below 0.042 Hz (2.5 cycles/min) | Bradygastria |
+| 0.042 to 0.0625 Hz | Normogastria |
+| above 0.0625 Hz (3.75 cycles/min) | Tachygastria |
 
 ## Background
 
@@ -81,4 +83,4 @@ The electrogastrogram (EGG) is a recording of the electrical activity of the sto
 Ivan Šmidt
 
 Faculty of Technical Sciences, University of Novi Sad
-Biomedical Engineering, course: Clinical Engineering, 2026.
+Biomedical Engineering, course: Clinical Engineering, 2026

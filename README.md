@@ -18,7 +18,7 @@ The signal is the sum of a basic gastric rhythm with two harmonics and two respi
 
 ## How to run
 
-1. Open `egg-signal-simulation.vi`.
+1. Download [`egg-signal-simulation.vi`](egg-signal-simulation.vi) and open it in LabVIEW.
 2. Set the minimum and maximum values for the basic rhythm and respiratory disturbance.
 3. Set the sampling frequency.
 4. Press **Start** to run the simulation.

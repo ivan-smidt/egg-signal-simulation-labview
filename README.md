@@ -32,7 +32,7 @@ Front panel with the main controls: signal generation, sampling frequency, range
 
 ### Bradygastria
 
-![Front panel, bradygastria](images/front-panel-bradzgastria.png)
+![Front panel, bradygastria](images/front-panel-bradygastria.png)
 
 Basic rhythm of 0.033 Hz, below 0.042 Hz, so the rhythm is classified as bradygastria. The spectrum has its main peak at the basic rhythm frequency, followed by its harmonics.
 

@@ -67,6 +67,10 @@ When the input is valid, the program generates the basic rhythm frequency and am
 
 If any minimum value is greater than its maximum, the program shows an error message and does not generate a signal.
 
+### Timeout case
+
+![Block diagram, Timeout case](images/block-diagram-timeout-case.png)
+
 ## Rhythm classification
 
 | Basic rhythm frequency | Type |

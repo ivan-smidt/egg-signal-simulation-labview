@@ -4,7 +4,7 @@ LabVIEW simulation of an electrogastrogram (EGG) signal with input validation, r
 
 ## Overview
 
-The signal is the sum of a basic gastric rhythm with two harmonics and two respiratory disturbance components. The basic rhythm and the respiratory disturbance components are generated randomly within the ranges set on the front panel, and the harmonics are derived from the basic rhythm.
+The signal is the sum of a basic gastric rhythm with two harmonics and two respiratory disturbance components. The basic rhythm and the respiratory disturbance components are generated randomly within the ranges set on the front panel, and the harmonics are derived from the basic rhythm. Frequencies are in Hz and amplitudes are in µV.
 
 ## Features
 
@@ -16,10 +16,11 @@ The signal is the sum of a basic gastric rhythm with two harmonics and two respi
 - Frequency-domain display (FFT)
 - Automatic rhythm classification
 
-  ## Requirements
+## Requirements
 
 - LabVIEW 2026 or newer
 - For older versions, use [`egg-signal-simulation-2020.vi`](egg-signal-simulation-2020.vi), saved for LabVIEW 2020
+  
 ## How to run
 
 1. Download [`egg-signal-simulation.vi`](egg-signal-simulation.vi) and open it in LabVIEW.
@@ -83,4 +84,5 @@ The electrogastrogram (EGG) is a recording of the electrical activity of the sto
 Ivan Šmidt
 
 Faculty of Technical Sciences, University of Novi Sad
+
 Biomedical Engineering, course: Clinical Engineering, 2026

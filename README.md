@@ -79,5 +79,6 @@ The electrogastrogram (EGG) is a recording of the electrical activity of the sto
 ## Author
 
 Ivan Šmidt
+
 Faculty of Technical Sciences, University of Novi Sad
 Biomedical Engineering, course: Clinical Engineering, 2026.
